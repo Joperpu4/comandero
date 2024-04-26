@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="comandero.js"></script>
+        <!--<meta name="viewport" content="width=device-width"/>
+        <meta name='viewport' content='user-scalable=0'> -->
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    </head>
+    <body>
+        <h1>Calculadora Cruz de Mayo 2024</h1>
+        <form name="ncomanda" id="comandero" action="#ncomanda" onsubmit="calcularTotal(this);">
+            <table>
+                <tr>
+                    <td colspan="2" align="center"><h3>BEBIDAS</h3></td>
+                </tr>
+                <tr>
+                    <td>Agua</td>
+                    <td><input id="agua" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Refresco</td>
+                    <td><input id="refresco" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Monster</td>
+                    <td><input id="monster" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Medio vino Parlamento</td>
+                    <td><input id="medio" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Cerveza / Radler</td>
+                    <td><input id="cerveza" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Cerveza sin filtrar</td>
+                    <td><input id="cervezasinfil" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Jarra de Cerveza</td>
+                    <td><input id="jarracerveza" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Bono cerveza/refresco</td>
+                    <td><input id="bono" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Bono sin filtrar</td>
+                    <td><input id="bonosinfiltrar" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Fino CB</td>
+                    <td><input id="fino" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Jarra de Rebujito</td>
+                    <td><input id="jarrarebujito" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Combinado nacional</td>
+                    <td><input id="combinado" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Combinado Premium</td>
+                    <td><input id="combinadopremium" type="number"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><h3>BOCADILLOS</h3></td>
+                </tr>
+                <tr>
+                    <td>Simple</td>
+                    <td><input id="bsimple" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Lomo</td>
+                    <td><input id="blomo" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Pinchitos</td>
+                    <td><input id="bpinchitos" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Doble</td>
+                    <td><input id="bdoble" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Bacon + Queso</td>
+                    <td><input id="bbaconqueso" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Serranito</td>
+                    <td><input id="bserranito" type="number"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><h3>RACIONES</h3></td>
+                </tr>
+                <tr>
+                    <td>General</td>
+                    <td><input id="rgeneral" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Queso</td>
+                    <td><input id="rqueso" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Barco/Congreso</td>
+                    <td><input id="barco" type="number"></td>
+                </tr>
+                    <td colspan="2" align="center"><h3>VARIOS</h3></td>
+                </tr>
+                <tr>
+                    <td>Pinchito (unidad)</td>
+                    <td><input id="pincho" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Pulga</td>
+                    <td><input id="pulga" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Surtido pulgas</td>
+                    <td><input id="surtidopulgas" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Montadito de lomo</td>
+                    <td><input id="montadito" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Flamenquín</td>
+                    <td><input id="flamenquin" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Hamburguesita</td>
+                    <td><input id="burguer" type="number"></td>
+                </tr>
+                <tr>
+                    <td>Bolsa patatas</td>
+                    <td><input id="patatas" type="number"></td>
+                </tr>
+                <tr><td><h5></h5></td></tr>
+                <tr>
+                    <td>Añadir importe</td>
+                    <td><input id="sorpresa" type="number"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="submit" value="Calcular total"></td>
+                    <td><input type="reset" value="Borrar"></td>
+                </tr>
+            </table>
+        </form>
+        <form name="nvuelta" action="#nvuelta" id="vuelta" onsubmit="vuelta(this);">
+
+            <table>
+                <tr>
+                    <td>Total</td><td><input id="total"></td>
+                </tr>
+                <tr>
+                    <td>Entrega</td><td><input id="entrega"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Calcular vuelta"></td><td><input type="reset" value="Borrar"></td>
+                </tr>
+                <tr>
+                    <td>Vuelta:</td><td><span id="cambio">0</span> €</td>
+                </tr>
+
+            </table>
+           <!-- <p>Total: <input id="total"></p>
+            <p>Entrega<input id="entrega"></p>
+            <input type="submit" value="Calcular vuelta">
+            <input type="reset" value="Borrar">-->
+        </form>
+        <!--<p>Vuelta:<span id="cambio">0</span> €</p>-->
+        
+    </body>
+</html>
